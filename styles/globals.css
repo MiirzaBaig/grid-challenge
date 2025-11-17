@@ -1,0 +1,66 @@
+/**
+ * Global Styles
+ * - Tailwind CSS base classes
+ * - Custom resize handle styles for react-rnd
+ * - Dark theme styling
+ * - Custom scrollbar
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Dark theme background */
+body {
+  background: #030712;
+  color: #f9fafb;
+}
+
+/* React-RND Resize Handles - Edge handles (top, right, bottom, left) */
+.resize-handle-edge {
+  background: rgba(59, 130, 246, 0.3); /* Semi-transparent blue */
+  z-index: 60;
+}
+
+/* Corner handles (topLeft, topRight, bottomLeft, bottomRight) */
+.resize-handle-corner {
+  width: 12px !important;
+  height: 12px !important;
+  background: #3b82f6 !important; /* Blue */
+  border: 2px solid white;
+  border-radius: 50%; /* Circle */
+  z-index: 60;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Scrollbar - Dark theme */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
