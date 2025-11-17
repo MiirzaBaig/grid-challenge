@@ -70,5 +70,3 @@ export function useGridMath(containerRef: React.RefObject<HTMLDivElement>): Grid
 
 // Export constants for use in other files
 export { ROW_HEIGHT, GAP, GRID_COLUMNS };
-
-export { ROW_HEIGHT, GAP, GRID_COLUMNS };
